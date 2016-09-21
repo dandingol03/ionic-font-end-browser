@@ -1,0 +1,24 @@
+{
+  "name": "ionic-font-end-browser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "colors": "^1.1.2",
+    "express": "^4.14.0",
+    "express-static": "^1.0.3",
+    "http": "0.0.0",
+    "http-proxy": "^1.15.1",
+    "mysql": "^2.11.1",
+    "q": "^1.4.1",
+    "url": "^0.11.0",
+    "ws": "^1.1.1"
+  }
+}

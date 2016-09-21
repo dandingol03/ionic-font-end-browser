@@ -1,0 +1,178 @@
+<ion-modal-view class="carInfo_modal animated slideInDown ">
+  <div class="close_detmodal" ng-click="close_lifeModal()">
+    <img src="img/close.png"/>
+  </div>
+  <ion-content class="carInfo_content" style="width: 95%;padding:10px">
+
+    <div class="list" style="margin-bottom: 0px;">
+      <ul class="ul-tabs">
+        <!-- 代办车辆年审 -->
+        <li style="width:50%;">
+          <div class="cell"
+               ng-class="{true: 'selected', false: ''}[life_insurance.tab=='insurancer']"
+               ng-click="life_insurance.tab='insurancer'">
+               <span style="position: absolute;left: 40%;top: 30%;">
+                 投保人
+               </span>
+          </div>
+        </li>
+
+        <!-- 代办行驶证年审 -->
+        <li style="width:50%">
+          <div class="cell"
+               ng-class="{true: 'selected', false: ''}[life_insurance.tab=='insuranced']"
+               ng-click="life_insurance.tab='insuranced'">
+               <span style="position: absolute;left: 40%;top:30%;">
+                 被投保人
+               </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <!-- 投保人 -->
+    <div ng-if="life_insurance.tab=='insurancer'">
+
+
+      <div class="item" style="margin:1px;border-top:0px;border-left:0px;border-right:0px;padding:10px;">
+        <span class="input-label" style="display: inline-block;">
+          姓名:
+        </span>
+        <input type="text"
+               ng-model="life_insurance.applicant.name"
+               placeholder="请输入投保人姓名"
+               style="display: inline-block"/>
+      </div>
+
+      <div class="item" style="margin:1px;border-top:0px;border-left:0px;border-right:0px;padding:10px;">
+        <span class="input-label" style="display: inline-block;">
+          年龄:
+        </span>
+        <input type="text"
+               ng-model="life_insurance.applicant.age"
+               placeholder="请输入投保人年龄"
+               style="display: inline-block"/>
+      </div>
+
+      <div class="item" style="margin:1px;border-top:0px;border-left:0px;border-right:0px;padding:10px;">
+        <span class="input-label" style="display: inline-block;">
+          性别:
+        </span>
+        <input type="text"
+               ng-model="life_insurance.applicant.sex"
+               placeholder="请输入投保人性别"
+               style="display: inline-block"/>
+      </div>
+
+
+    </div>
+
+
+    <!-- 被投保人 -->
+    <div class="list"  ng-if="life_insurance.tab=='insuranced'">
+
+
+      <div class="item" style="margin:1px;border-top:0px;border-left:0px;border-right:0px;padding:10px;">
+        <span class="input-label" style="display: inline-block;">
+          姓名:
+        </span>
+        <input type="text"
+               ng-model="life_insurance.insuredPerson.name"
+               placeholder="请输入被投保人姓名"
+               style="display: inline-block"/>
+      </div>
+
+      <div class="item" style="margin:1px;border-top:0px;border-left:0px;border-right:0px;padding:10px;">
+        <span class="input-label" style="display: inline-block;">
+          年龄:
+        </span>
+        <input type="text"
+               ng-model="life_insurance.insuredPerson.age"
+               placeholder="请输入被投保人年龄"
+               style="display: inline-block"/>
+      </div>
+
+
+      <div class="item" style="margin:1px;border-top:0px;border-left:0px;border-right:0px;padding:10px;">
+        <span class="input-label" style="display: inline-block;">
+          性别:
+        </span>
+        <input type="text"
+               ng-model="life_insurance.insuredPerson.sex"
+               placeholder="请输入被投保人性别"
+               style="display: inline-block"/>
+      </div>
+
+      <div class="item" style="margin:1px;border-top:0px;border-left:0px;border-right:0px;padding:10px;">
+             <span class="input-label" style="display: inline-block;">
+              需要的保障:
+            </span>
+            <span ng-click="gurantees_select(gurantees)">
+              {{gurantee}}
+              <i class="ion-ios-arrow-down" ></i>
+            </span>
+      </div>
+
+      <div class="item" style="margin:1px;border-top:0px;border-left:0px;border-right:0px;padding:10px;">
+             <span class="input-label" style="display: inline-block;">
+              被投保人关系:
+            </span>
+            <span ng-click="relation_select(relations)">
+              {{gurantee}}
+              <i class="ion-ios-arrow-down" ></i>
+            </span>
+      </div>
+
+      <div class="item" style="margin:1px;border-top:0px;border-left:0px;border-right:0px;padding:10px;">
+        <span class="input-label" style="display: inline-block;">
+              有无社保:
+        </span>
+
+          <label class="toggle" style="position: absolute;right: 20%;">
+            <input type="checkbox" ng-model="life_insurance.insuredPerson.social">
+            <div class="track">
+              <div class="handle"></div>
+            </div>
+          </label>
+      </div>
+
+      <div class="item" style="margin:1px;border-top:0px;border-left:0px;border-right:0px;padding:10px;">
+        <span class="input-label" style="display: inline-block;">
+              有无商业保险:
+        </span>
+
+        <label class="toggle" style="position: absolute;right: 20%;">
+          <input type="checkbox" ng-model="life_insurance.insuredPerson.commercial">
+          <div class="track">
+            <div class="handle"></div>
+          </div>
+        </label>
+      </div>
+
+      <div class="item" style="margin:1px;border-top:0px;border-left:0px;border-right:0px;padding:10px;">
+        <span class="input-label" style="display: inline-block;">
+          计划保费:
+        </span>
+        <input type="text"
+               ng-model="life_insurance.insuredPerson.budget"
+               placeholder="请输入计划保费"
+               style="display: inline-block"/>
+      </div>
+
+
+
+    </div>
+
+
+    <button class="button button-full button-positive" style="margin-top: 30px"  ng-click="apply()">
+      提交
+    </button>
+
+
+
+
+  </ion-content>
+
+</ion-modal-view>

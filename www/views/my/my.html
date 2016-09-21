@@ -1,0 +1,48 @@
+<ion-view view-title="我的">
+
+  <ion-nav-bar class="bar-stable" align-title="center" >
+    <ion-nav-buttons side="left">
+      <button class="button button-icon button-clear bar_arr" ng-click="go_back()">
+        <i class="ion-chevron-left"></i>
+      </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+      <button class="button button-icon button-clear" ng-click="goto('/#/tabs/dashboard')">
+        <i class="ion-ios-search-strong"></i>
+      </button>
+    </ion-nav-buttons>
+
+  </ion-nav-bar>
+
+
+  <ion-content scroll="true" class="padding" lazy-scroll>
+
+    <ul class="list">
+
+      <li class="item item-icon-right" ng-click="go_to('myInfo')">
+        <span>
+            <i class="ion-person"  style="font-size: 3.2em;"></i>
+            {{user.phone}}
+        </span>
+        <i class="icon ion-chevron-right" style="font-size: 1.2em;"></i>
+      </li>
+    </ul>
+
+
+    <ion-list>
+      <ion-item ng-repeat="item in infos" class="item item-icon-right" ng-click="go_to(item.href)">
+        <span>
+          <i class="ion-clipboard"  ng-style="item.style" ng-if="$index%2==0"></i>
+          <i class="ion-levels" ng-style="item.style" ng-if="$index%2!=0"></i>
+          {{item.title}}
+        </span>
+        <i class="icon ion-chevron-right" style="font-size: 1.2em;"></i>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+
+
+
+
+</ion-view>
