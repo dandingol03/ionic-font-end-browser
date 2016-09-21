@@ -3,8 +3,7 @@ angular.module('starter')
   .controller('dashboardController',function($scope,$state,$http, $location,
                                              $rootScope,$ionicModal,$timeout,
                                              $cordovaCamera,ionicDatePicker,
-                                             $ionicActionSheet,BaiduMapService,$ionicPopup,$cordovaFile,
-                                             $q,$ionicPlatform){
+                                             $ionicActionSheet){
 
     $scope.carInfo={};
 
@@ -14,7 +13,7 @@ angular.module('starter')
 
     $http({
       method: "post",
-      url: "http://192.168.0.199:3000/svr/request",
+      url: "/proxy/node_server/svr/request",
       headers: {
         'Authorization': "Bearer " + $rootScope.access_token,
       },
@@ -117,24 +116,23 @@ angular.module('starter')
     };
     /*** bind coverage_tab_modal ***/
 
-    /*** bind append_person_modal ***/
-    $ionicModal.fromTemplateUrl('views/modal/append_person_modal.html',{
+    /*** bind append_insurer_modal ***/
+    $ionicModal.fromTemplateUrl('views/modal/append_insurer_modal.html',{
       scope:  $scope,
       animation: 'slide-in-up'
     }).then(function(modal) {
-      $scope.append_person_modal = modal;
+      $scope.append_insurer_modal = modal;
     });
 
-    //待定
-    $scope.open_appendPersonModal= function(){
-      $scope.append_person_modal.show();
+    $scope.open_appendInsurerModal= function(){
+      $scope.append_insurer_modal.show();
     };
 
 
-    $scope.close_appendPersonModal= function() {
-      $scope.append_person_modal.hide();
+    $scope.close_appendInsurerModal= function() {
+      $scope.append_insurer_modal.hide();
     };
-    /*** bind append_person_modal ***/
+    /*** bind append_insurer_modal ***/
 
 
 
@@ -158,7 +156,7 @@ angular.module('starter')
     $scope.postCarInfo=function(){
       $http({
         method: "POST",
-        url: "/proxy/node_server/request",
+        url: "/proxy/node_server/svr/request",
         headers: {
           'Authorization': "Bearer " + $rootScope.access_token,
         },
@@ -254,7 +252,7 @@ angular.module('starter')
 
     $scope.life_insurance=
     {
-      insuer:{},
+      insurer:{},
       insuranceder:{},
       benefiter:{},
       intend:{}
@@ -293,7 +291,7 @@ angular.module('starter')
     //返回寿险产品列表
     $http({
       method: "POST",
-      url: "http://192.168.0.199:3000/svr/request",
+      url: "/proxy/node_server/svr/request",
       headers: {
         'Authorization': "Bearer " + $rootScope.access_token,
       },
@@ -412,10 +410,77 @@ angular.module('starter')
         });
     }
 
+    //寿险状态查询
+    $scope.lifeInsuranceStateQuery=function(){
+      $http({
+        method: "POST",
+        url: "/proxy/node_server/svr/request",
+        headers: {
+          'Authorization': "Bearer " + $rootScope.access_token,
+        },
+        data:
+        {
+          request:'getOrderState',
+          orderId:orderId
+        }
+      }).then(function(res) {
+        var data=res.state;
+        if(data==3)
+        {
+
+
+        }
+      }).catch(function(err) {
+        var str='';
+        for(var field in err)
+          str += field + ':' + err[field];
+        alert('error=\r\n' + str);
+      });
+    }
+
+    //获取寿险订单状态
+    $scope.getLifeOrderState=function(){
+      $http({
+        method: "POST",
+        url: "/proxy/node_server/svr/request",
+        headers: {
+          'Authorization': "Bearer " + $rootScope.access_token,
+        },
+        data:
+        {
+          request:'getLifeOrderState',
+          orderId:orderId
+        }
+      }).then(function(res) {
+        var data=res.state;
+        if(data==3)
+        {
+
+
+        }
+      }).catch(function(err) {
+        var str='';
+        for(var field in err)
+          str += field + ':' + err[field];
+        alert('error=\r\n' + str);
+      });
+
+    }
+
+
     //寿险意向保留
     $scope.saveLifeInsuranceIntend=function()
     {
-      $rootScope.life_insurance=$scope.life_insurance;
+      $scope.life_insurance.order= {
+        insurancederId:1,
+        insurerId:1,
+        benefiterId:1,
+        insuranceType:'重疾',
+        hasSocietyInsurance:0,
+        hasCommerceInsurance:0,
+        planInsuranceFee:1000
+      };
+
       $http({
         method: "POST",
         url: "/proxy/node_server/svr/request",
@@ -429,7 +494,18 @@ angular.module('starter')
         }
       }).then(function(res) {
 
-        console.log('request has been back');
+        if(res.data!==undefined&&res.data!==null)
+        {
+          var orderId=res.data.data;
+          if(orderId!==undefined&&orderId!==null)
+          {
+            if($rootScope.lifeInsurance==undefined||$rootScope.lifeInsurance==null)
+              $rootScope.lifeInsurance={};
+            $rootScope.lifeInsurance.orderId=orderId;
+            $state.go('life_insurance_orders',{tabIndex:2});
+          }
+        }
+
       }).catch(function(err) {
         var str='';
         for(var field in err)
@@ -437,10 +513,6 @@ angular.module('starter')
         alert('error=\r\n' + str);
       });
     }
-
-
-
-
 
 
     //车险保额选择
@@ -502,17 +574,6 @@ angular.module('starter')
       $rootScope.selected_daily= $scope.selected_daily;
 
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -692,6 +753,15 @@ angular.module('starter')
 
 
 
+    $scope.append_insurer=function(props){
+      //TODO:append a popup
+      //$scope.ionicPopup=function(title,item,field,cb) {
+      $scope.ionicPopup(props.title,props.item,props.field,$scope.open_appendInsurerModal);
+
+    }
+
+
+
 
     $scope.Setter=function(type,item,field,cmd){
       switch(type)
@@ -699,7 +769,7 @@ angular.module('starter')
         case 'remote':
           $http({
             method: "POST",
-            url: "http://192.168.0.199:3000/svr/request",
+            url: "/proxy/node_server/svr/request",
             headers: {
               'Authorization': "Bearer " + $rootScope.access_token,
             },
@@ -711,21 +781,25 @@ angular.module('starter')
             var data=res.data;
             if(data.re==2)
             {
-              var confirmPopup = $ionicPopup.confirm({
-                title: '<strong>选择投保人?</strong>',
-                template: '可选人员没有,是否进行添加?',
-                okText: '添加',
-                cancelText: '取消'
-              });
+              //var confirmPopup = $ionicPopup.confirm({
+              //  title: '<strong>选择投保人?</strong>',
+              //  template: '可选人员没有,是否进行添加?',
+              //  okText: '添加',
+              //  cancelText: '取消'
+              //});
+              //
+              //confirmPopup.then(function (res) {
+              //  if (res) {
+              //    //TODO:bind new relative customer
+              //    $scope.open_appendPersonModal();
+              //    $scope.life_insurance.person.perType=1;
+              //  } else {
+              //    // Don't close
+              //  }
+              //});
 
-              confirmPopup.then(function (res) {
-                if (res) {
-                  //TODO:bind new relative customer
-                  $scope.open_appendPersonModal();
-                } else {
-                  // Don't close
-                }
-              });
+
+
             }else if(date.re==1)
             {
               var buttons=[];
@@ -754,12 +828,62 @@ angular.module('starter')
         default:
           break;
       }
-    }
+    };
+
+
+
+
+    $scope.ionicPopup=function(title,item,field,cb) {
+
+      var buttons=[];
+      if(Object.prototype.toString.call(cb)=='[object Array]')
+      {
+        buttons.push({text: '<b>取消</b>', type: 'button-assertive'});
+        cb.map(function(item,i) {
+          buttons.push({text: item.text, type: 'button-positive', onTap: item.cb});
+        });
+      }else{
+        buttons=[
+          {
+            text: '<b>取消</b>',
+            type:'button-assertive'
+          },
+          {
+            text: '<b>自己</b>',
+            type: 'button-positive',
+            onTap: function(e) {
+              item[field]='self';
+            }
+          },
+          {
+            text: '<b>添加</b>',
+            type: 'button-positive',
+            onTap: function(e) {
+              cb();
+              //$scope.open_appendPersonModal();
+              //$scope.life_insurance.person.perType=1;
+            }
+          }
+        ];
+      }
+
+      var myPopup = $ionicPopup.show({
+        template: '可选人员没有,是否进行添加',
+        title: '<strong>选择投保人?</strong>',
+        subTitle: '',
+        scope: $scope,
+        buttons: buttons
+      });
+
+      myPopup.then(function(res) {
+        console.log('...');
+      });
+    };
 
     $scope.life_insurance.person=
-    {
-      relType:1
-    };
+    {};
+
+
 
     $scope.getBin=function(item,field){
       var deferred=$q.defer();
@@ -798,7 +922,17 @@ angular.module('starter')
         if(reg.exec(field))
         {
           $scope.getBin(item,field).then(function(res) {
-            item[field]=res;
+            var gen_feild=field.replace('_img','Photo');
+            var type=null;
+            if(item[field].indexOf('.jpg')!=-1)
+              type = 'jpg';
+            else if(item[field].indexOf('.png')!=-1)
+              type='png';
+            else{}
+            item[gen_feild]={
+              type:type,
+              bin:res
+            }
             deferred.resolve({re: 1});
           }).catch(function(err) {
             deferred.reject(err.toString());
@@ -816,7 +950,7 @@ angular.module('starter')
         .then(function(json) {
         return  $http({
           method: "POST",
-          url: "http://192.168.0.199:3000/svr/request",
+          url: "http://192.168.1.116:3000/svr/request",
           headers: {
             'Authorization': "Bearer " + $rootScope.access_token,
           },
@@ -839,22 +973,67 @@ angular.module('starter')
 
     }
 
-    $scope.ActionSheet= function (options,item,field) {
-      var person=$scope.life_insurance.person;
-      var buttons=[];
-      options.map(function(item,i) {
-        buttons.push({text: item});
-      });
-      $ionicActionSheet.show({
-        buttons:buttons,
-        titleText: '',
-        cancelText: '取消',
-        buttonClicked: function(index) {
-          item[field] = buttons[index].text;
-          return true;
-        },
-        cssClass:'motor_insurance_actionsheet'
-      });
+    $scope.ActionSheet= function (options,item,field,addon_field,url,fail) {
+      if((options==null||options==undefined)&&url!==undefined&&url!==null)//远程
+      {
+        $http({
+          method: "POST",
+          url: "/proxy/node_server/svr/request",
+          headers: {
+            'Authorization': "Bearer " + $rootScope.access_token
+          },
+          data:
+          {
+            request:url
+          }
+        }).then(function(json) {
+          var res=json.data;
+          if(res.re==2)
+          {
+            if(fail!==undefined&&fail!==null)
+            {
+              var cb=fail.cb;
+              cb(fail.title,item,field);
+            }
+          }else{
+            var buttons=[];
+            json.data.map(function(item,i) {
+              buttons.push({text: item});
+            });
+            $ionicActionSheet.show({
+              buttons:buttons,
+              titleText: '',
+              cancelText: '取消',
+              buttonClicked: function(index) {
+                item[field] = buttons[index].text;
+                if(addon_field!==undefined&&addon_field!==null)
+                  item[addon_field]=(index+1);
+                return true;
+              },
+              cssClass:'motor_insurance_actionsheet'
+            });
+          }
+        });
+      }
+      else{//本地
+
+        var buttons=[];
+        options.map(function(item,i) {
+          buttons.push({text: item});
+        });
+        $ionicActionSheet.show({
+          buttons:buttons,
+          titleText: '',
+          cancelText: '取消',
+          buttonClicked: function(index) {
+            item[field] = buttons[index].text;
+            if(addon_field!==undefined&&addon_field!==null)
+              item[addon_field]=(index+1);
+            return true;
+          },
+          cssClass:'motor_insurance_actionsheet'
+        });
+      }
     }
 
     $scope.Toggle=function(type,item,field)
@@ -870,26 +1049,27 @@ angular.module('starter')
       }
     }
 
-      //intial BMap service
-      BaiduMapService.getBMap(function(BMap){
+      ////intial BMap service
+      //BaiduMapService.getBMap(function(BMap){
+      //
+      //  /**
+      //   * 自身定位
+      //   */
+      //  var geolocation = new BMap.Geolocation();
+      //  geolocation.getCurrentPosition(function(r){
+      //    if(this.getStatus() == BMAP_STATUS_SUCCESS){
+      //      //var mk = new BMap.Marker(r.point);
+      //      //map.addOverlay(mk);
+      //      //map.panTo(r.point);
+      //      //alert('您的位置：'+r.point.lng+','+r.point.lat);
+      //    }
+      //    else {
+      //      //alert('failed'+this.getStatus());
+      //    }
+      //  },{enableHighAccuracy: true});
+      //
+      //});
 
-        /**
-         * 自身定位
-         */
-        var geolocation = new BMap.Geolocation();
-        geolocation.getCurrentPosition(function(r){
-          if(this.getStatus() == BMAP_STATUS_SUCCESS){
-            //var mk = new BMap.Marker(r.point);
-            //map.addOverlay(mk);
-            //map.panTo(r.point);
-            //alert('您的位置：'+r.point.lng+','+r.point.lat);
-          }
-          else {
-            //alert('failed'+this.getStatus());
-          }
-        },{enableHighAccuracy: true});
-
-      });
 
     $scope.add_op=function(item,field){
       if(item[field]==undefined||item[field]==null)
@@ -906,6 +1086,36 @@ angular.module('starter')
       }
       if(item[field]>0)
         item[field]--;
+    }
+
+
+    $scope.getLastCarInsuranceOrderSerial=function(){
+        $http({
+          method: "POST",
+          url: "/proxy/node_server/svr/request",
+          headers: {
+            'Authorization': "Bearer " + $rootScope.access_token,
+          },
+          data:
+          {
+            request:'getCurDayOrderNumTest',
+            info:{
+              type:'carInsurance'
+            }
+          }
+        })
+        .then(function(res) {
+            alert('...it is back')
+          })
+        .catch(function(err) {
+            var str='';
+            for(var field in err) {
+              str += err[field];
+            }
+            alert('err=\r\n' + str);
+          });
+
+
     }
 
   });

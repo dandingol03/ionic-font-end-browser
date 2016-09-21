@@ -1,0 +1,1845 @@
+[2016-09-16 10:47:43.582] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 10:52:53.636] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 11:01:56.099] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 11:08:11.924] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 11:10:18.315] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 11:38:01.981] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 11:39:30.047] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 11:46:13.841] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 11:54:03.775] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 11:54:38.062] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 11:56:35.233] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 12:33:19.101] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 12:35:19.539] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 12:35:42.181] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 12:35:57.493] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 12:37:00.661] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 12:38:08.332] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 12:39:38.312] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 12:40:02.868] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 12:40:58.889] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 12:41:43.323] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 12:42:00.973] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 12:43:46.314] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 12:44:42.212] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 12:45:15.510] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 12:46:36.134] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 12:49:05.204] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 15:22:36.414] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 15:26:04.277] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 15:26:57.392] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 15:29:11.865] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 15:30:24.551] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 15:37:26.979] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 15:51:07.861] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 17:51:13.301] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 17:55:00.424] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 17:59:55.647] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 18:02:01.897] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 19:11:25.070] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 19:16:13.902] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 21:12:35.170] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 21:13:11.817] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 21:14:05.228] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 21:21:28.455] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-16 21:32:06.363] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:148:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)

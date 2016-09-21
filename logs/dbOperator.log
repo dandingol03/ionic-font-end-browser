@@ -1,0 +1,243 @@
+[2016-09-18 08:19:58.743] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:150:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-18 08:51:10.012] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:150:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-18 08:53:38.964] [ERROR] dbOperator - { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+  cause: 
+   { [Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist]
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     index: 0 },
+  isOperational: true,
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'insurancems.insurance_car_customer' doesn't exist
+    at Query.Sequence._packetToError (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:51:14)
+    at Query.ErrorPacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+    at Protocol._parsePacket (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at PoolConnection.query (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:214:25)
+    at PoolConnection.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at PoolConnection.ret [as queryAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:150:21
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/using.js:185:26
+    at tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.module.exports.Promise._settlePromiseFromHandler (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise.module.exports.Promise._settlePromise0 (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise.module.exports.Promise._settlePromises (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise.module.exports.Promise._fulfill (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:636:18)
+    at PromiseArray.module.exports.PromiseArray._resolve (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:125:19)
+    at PromiseArray.module.exports.PromiseArray._promiseFulfilled (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise_array.js:143:14)
+    at Promise.module.exports.Promise._settlePromise (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promise.js:572:26)
+[2016-09-18 20:56:25.024] [ERROR] dbOperator - { [Error: connect EHOSTUNREACH 202.194.14.106:3306 - Local (192.168.0.199:61435)]
+  cause: 
+   { [Error: connect EHOSTUNREACH 202.194.14.106:3306 - Local (192.168.0.199:61435)]
+     code: 'EHOSTUNREACH',
+     errno: 'EHOSTUNREACH',
+     syscall: 'connect',
+     address: '202.194.14.106',
+     port: 3306,
+     fatal: true },
+  isOperational: true,
+  code: 'EHOSTUNREACH',
+  errno: 'EHOSTUNREACH',
+  syscall: 'connect',
+  address: '202.194.14.106',
+  port: 3306,
+  fatal: true }
+Error: connect EHOSTUNREACH 202.194.14.106:3306 - Local (192.168.0.199:61435)
+    at Object.exports._errnoException (util.js:873:11)
+    at exports._exceptionWithHostPort (util.js:896:20)
+    at connect (net.js:865:16)
+    at net.js:953:9
+    at nextTickCallbackWith0Args (node.js:420:9)
+    at process._tickCallback (node.js:349:13)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at Protocol.handshake (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:52:41)
+    at PoolConnection.connect (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:136:18)
+    at Pool.getConnection (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Pool.ret [as getConnectionAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:13:39)
+    at getSqlConnection (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:24:17)
+    at Object.getPersonId (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:206:18)
+    at Object.model.getUser (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/model.js:91:14)
+    at Grant.usePasswordGrant (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/oauth2-server/lib/grant.js:225:21)
+    at Grant.checkGrantType (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/oauth2-server/lib/grant.js:167:31)
+    at run (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/oauth2-server/lib/runner.js:15:14)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/oauth2-server/lib/runner.js:17:7
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/oauth2-server/lib/grant.js:347:5
+    at Object.model.grantTypeAllowed (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/model.js:68:3)
+    at Grant.checkGrantTypeAllowed (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/oauth2-server/lib/grant.js:338:14)
+[2016-09-18 20:56:27.725] [ERROR] dbOperator - { [Error: connect EHOSTUNREACH 202.194.14.106:3306 - Local (192.168.0.199:61438)]
+  cause: 
+   { [Error: connect EHOSTUNREACH 202.194.14.106:3306 - Local (192.168.0.199:61438)]
+     code: 'EHOSTUNREACH',
+     errno: 'EHOSTUNREACH',
+     syscall: 'connect',
+     address: '202.194.14.106',
+     port: 3306,
+     fatal: true },
+  isOperational: true,
+  code: 'EHOSTUNREACH',
+  errno: 'EHOSTUNREACH',
+  syscall: 'connect',
+  address: '202.194.14.106',
+  port: 3306,
+  fatal: true }
+Error: connect EHOSTUNREACH 202.194.14.106:3306 - Local (192.168.0.199:61438)
+    at Object.exports._errnoException (util.js:873:11)
+    at exports._exceptionWithHostPort (util.js:896:20)
+    at connect (net.js:865:16)
+    at net.js:953:9
+    at nextTickCallbackWith0Args (node.js:420:9)
+    at process._tickCallback (node.js:349:13)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at Protocol.handshake (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:52:41)
+    at PoolConnection.connect (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:136:18)
+    at Pool.getConnection (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Pool.ret [as getConnectionAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:13:39)
+    at getSqlConnection (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:24:17)
+    at Object.getPersonId (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:206:18)
+    at Object.model.getUser (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/model.js:91:14)
+    at Grant.usePasswordGrant (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/oauth2-server/lib/grant.js:225:21)
+    at Grant.checkGrantType (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/oauth2-server/lib/grant.js:167:31)
+    at run (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/oauth2-server/lib/runner.js:15:14)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/oauth2-server/lib/runner.js:17:7
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/oauth2-server/lib/grant.js:347:5
+    at Object.model.grantTypeAllowed (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/model.js:68:3)
+    at Grant.checkGrantTypeAllowed (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/oauth2-server/lib/grant.js:338:14)
+[2016-09-18 20:56:36.167] [ERROR] dbOperator - { [Error: connect EHOSTUNREACH 202.194.14.106:3306 - Local (192.168.0.199:61464)]
+  cause: 
+   { [Error: connect EHOSTUNREACH 202.194.14.106:3306 - Local (192.168.0.199:61464)]
+     code: 'EHOSTUNREACH',
+     errno: 'EHOSTUNREACH',
+     syscall: 'connect',
+     address: '202.194.14.106',
+     port: 3306,
+     fatal: true },
+  isOperational: true,
+  code: 'EHOSTUNREACH',
+  errno: 'EHOSTUNREACH',
+  syscall: 'connect',
+  address: '202.194.14.106',
+  port: 3306,
+  fatal: true }
+Error: connect EHOSTUNREACH 202.194.14.106:3306 - Local (192.168.0.199:61464)
+    at Object.exports._errnoException (util.js:873:11)
+    at exports._exceptionWithHostPort (util.js:896:20)
+    at connect (net.js:865:16)
+    at net.js:953:9
+    at nextTickCallbackWith0Args (node.js:420:9)
+    at process._tickCallback (node.js:349:13)
+    --------------------
+    at Protocol._enqueue (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at Protocol.handshake (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/protocol/Protocol.js:52:41)
+    at PoolConnection.connect (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Connection.js:136:18)
+    at Pool.getConnection (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.tryCatcher (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/util.js:16:23)
+    at Pool.ret [as getConnectionAsync] (eval at <anonymous> (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:13:39)
+    at getSqlConnection (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:24:17)
+    at Object.getPersonId (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/dbOperator.js:206:18)
+    at Object.model.getUser (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/model.js:91:14)
+    at Grant.usePasswordGrant (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/oauth2-server/lib/grant.js:225:21)
+    at Grant.checkGrantType (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/oauth2-server/lib/grant.js:167:31)
+    at run (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/oauth2-server/lib/runner.js:15:14)
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/oauth2-server/lib/runner.js:17:7
+    at /Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/oauth2-server/lib/grant.js:347:5
+    at Object.model.grantTypeAllowed (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/js/model.js:68:3)
+    at Grant.checkGrantTypeAllowed (/Users/danding/Documents/WebstormProj/SVN/insurance_node_server/node_modules/oauth2-server/lib/grant.js:338:14)

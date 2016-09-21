@@ -17,93 +17,15 @@ angular.module('starter')
     };
 
 
-
-//从服务器取得险种
-    $scope.tabs=[
-      {type:'基础套餐',insurances:$scope.basic_meal},
-
-      { type:'建议套餐',
-        insurances:[
-
-          { name:'车上人员责任险',
-            specials:[
-              {name:'驾驶员',price:1000},
-              {name:'乘客',seats:[2,5,8,10]}
-            ]
-          },
-          {name:'交强险',price:400},
-          {name:'车船税',price:800},
-          {name:'车辆损失险',price:1205},
-          {name:'第三者责任险',prices:[1104,870,999]}
-        ]
-      },
-
-      {type:'自定义套餐',insurances:[]}
-    ];
-
-
-
-
-
-
-
-
-    //选择公司
-    $scope.companys=[
-      {name:"太平洋保险"},{name:"平安保险"},{name:"新华保险"},
-      {name:"太平洋保险"},{name:"太平洋保险"},{name:"太平洋保险"},
-      {name:"太平洋保险"},{name:"太平洋保险"},{name:"太平洋保险"}
-      ];
     $scope.company={name:"选择公司"};
+    //公司选择
     $scope.selectCompany=function(companyName){
-      $scope.company.name=companyName;
+
+      $scope.company.companyName=companyName;
       $scope.apply();
       $scope.closeCompanyModal();
 
     }
-
-
-    //获得险种的基础套餐列表
-
-    $http.get("http://202.194.14.106:9030/motor_insurance/basic_meal")
-    .then(function(response){
-      var data=response.data;
-      if(data.projects!=null&&data.projects!=undefined)
-      {
-        var projects=data.projects;
-        if(Object.prototype.toString.call(projects)!='[object Array]')
-          projects=JSON.parse(projects);
-
-        $scope.basic_meal=projects;//从测试服务器取到险种列表,付给coverages数组。
-        return true;
-      }else{
-        return false;
-      }
-
-    }).then(function(re){
-      $scope.tabs=[
-        {type:'基础套餐',insurances:$scope.basic_meal},
-
-        { type:'建议套餐',
-          insurances:[
-
-            { name:'车上人员责任险',
-              specials:[
-                {name:'驾驶员',price:1000},
-                {name:'乘客',seats:[2,5,8,10]}
-              ]
-            },
-            {name:'交强险',price:400},
-            {name:'车船税',price:800},
-            {name:'车辆损失险',price:1205},
-            {name:'第三者责任险',prices:[1104,870,999]}
-            ]
-        },
-
-        {type:'自定义套餐',insurances:[]}
-      ];
-    });
-
 
 
     //选择车辆人员责任险模态框
@@ -127,49 +49,44 @@ angular.module('starter')
     };
     /*** bind special_tab_modal ***/
 
-
-   /* $scope.apply=function () {//选好险种提交时做的动作
-
-      $scope.car_insurance.state='pricing';//状态是估价中订单
-
-      $rootScope. car_insurance=$scope.car_insurance;
-
-
-      $scope.coverages.map(function (coverages, i) {
-        if($scope.coverage.flag==true){
-          $scope.selected.push(coverage);
-        }
-      });
-
-      //TODO:push selected to back-end
-      //TODO:receive the shemes from back-end
-
-
-      $state.go('motor_plan',{plan:[]});//跳到车险方案列表页面,并传递选中的险种和相应保额作为参数。
-
-    }*/
-
-
-
+    $scope.toggle=function(item,field,options)
+    {
+      if(options!==undefined&&options!==null)
+      {
+      }else{
+        if(item[field]==true)
+          item[field]=false;
+        else
+          item[field]=true;
+      }
+    }
 
     $scope.go_back=function(){
       window.history.back();
     }
 
-    //车险保额选择
-    $scope.price_select=function(item,prices) {
-      if (prices !== undefined && prices !== null &&prices.length > 0)
+    $scope.actionSheet=function(item,sourceField,acts)
+    {
+      console.log('...');
+      if (item[sourceField] !== undefined && item[sourceField]!== null && item[sourceField].length > 0)
       {
         var buttons=[];
-        prices.map(function(price,i) {
-          buttons.push({text: price});
+        item[sourceField].map(function(li,i) {
+          buttons.push({text: li});
         });
         $ionicActionSheet.show({
           buttons:buttons,
           titleText: '选择你的保额',
           cancelText: 'Cancel',
           buttonClicked: function(index) {
-            item.price = prices[index];
+            acts.map(function (act, i) {
+              if(act.indexOf('=>')!=-1)
+              {
+                var dest=act.split('=>')[1];
+                var src=act.split('=>')[0];
+                item[dest]=item[src][index];
+              }
+            });
             return true;
           },
           cssClass:'motor_insurance_actionsheet'
@@ -179,37 +96,6 @@ angular.module('starter')
       {}
     }
 
-
-
-
-    $scope.actionSheet_show = function() {
-
-      // Show the action sheet
-      var hideSheet = $ionicActionSheet.show({
-        buttons: [
-          { text: '<b>Share</b> This' },
-          { text: '<b>Share</b> This' },
-          { text: '<b>Share</b> This' },
-          { text: '<b>Share</b> This' },
-          { text: '<b>Share</b> This' },
-          { text: '<b>Share</b> This' },
-          { text: '<b>Share</b> This' },
-          { text: '<b>Share</b> This' },
-          { text: '<b>Share</b> This' },
-          { text: '<b>Share</b> This' },
-          { text: 'Move' }
-        ],
-        titleText: 'select your favourite project ',
-        cancelText: 'Cancel',
-        cancel: function() {
-          // add cancel code..
-        },
-        buttonClicked: function(index) {
-          return true;
-        },
-        cssClass:'center'
-      });
-    };
 
 
 
@@ -249,50 +135,145 @@ angular.module('starter')
 
 
 
+    /**
+     * 获得险种套餐
+     */
+    $http({
+        method: "POST",
+        url: "/proxy/node_server/svr/request",
+        headers: {
+          'Authorization': "Bearer " + $rootScope.access_token
+        },
+        data:
+        {
+          request:'getCarInsuranceMeals'
+        }
+      }).then(function(response) {
+      var data=response.data;
+      var meals=[];
+      data.data.map(function(meal,i) {
+        var products={};
+        meal.products.map(function(product,j) {
+          if(products[product.productName]==undefined||products[product.productName]==null)
+          {
+            products[product.productName]=product;
+          }
+          else
+          {
+            if(products[product.productName].productIds!==undefined&&products[product.productName].productIds!==null)
+            {}else{
+              products[product.productName].productIds=[];
+              products[product.productName].insuranceTypes=[];
+              products[product.productName].productIds.push(products[product.productName].productId);
+              products[product.productName].insuranceTypes.push(products[product.productName].insuranceType);
+              products[product.productName].productId=null;
+              products[product.productName].insuranceType=null;
+            }
+            products[product.productName].productIds.push(product.productId);
+            products[product.productName].insuranceTypes.push(product.insuranceType);
 
+          }
+        });
+        meals.push({mealName:meal.mealName,products:products});
+      });
+      $scope.tabs=meals;
+
+      return $http({
+        method: "POST",
+        url: "/proxy/node_server/svr/request",
+        headers: {
+          'Authorization': "Bearer " + $rootScope.access_token
+        },
+        data:
+        {
+          request:'getInsuranceCompany'
+        }
+      });
+    }).then(function(res) {
+      var data=res.data;
+      //选择公司
+      $scope.companys=data.data;
+    }).catch(function(err) {
+      var str='';
+      for(var field in err)
+      str+=err[field];
+      console.log('error=\r\n'+str);
+    });
+
+
+
+
+
+    //提交车险意向
     $scope.apply=function(){
-      switch($scope.tabIndex)
-      {
-        case 0: //基础套餐
-        case 1: //建议套餐
-          var flag=true;
-          var meals = $scope.tabs[$scope.tabIndex];
-          var selected=meals.insurances.map(function(meal,i) {
-              if(meal.price!==undefined&&meal.price!==null)
-                return meal;
-              else
-              {
-                flag=false;
-                  return null;
-              }
-          });
-
-          if(flag!=true){
-            alert('请填写完成您的套餐选择');
-          }else{
-              //TODO:pass the meals to next step
-           $state.go('car_orders',{selected:JSON.stringify(selected)})
-
-
-          }
-
-          break;
-        case 2: //自定义套餐
-          var meals=$scope.basic_meal.map(function(meal,i) {
-            if(meal.checked==true)
-              return meal;
-          });
-
-          if(flag!=true){
-            alert('请填写完成您的基础套餐');
-          }else{
-            //TODO:pass the meals to next step
-          }
-
-          break;
-        default:
-          break;
+      var products=[];
+      var meal = $scope.tabs[$scope.tabIndex];
+      for(var productName in meal.products) {
+        var product=meal.products[productName];
+        if(product.checked==true)
+        {
+          products.push(product);
+        }
       }
+      var companys=[];
+      $scope.companys.map(function(company,i) {
+        if(company.checked==true)
+          companys.push(company);
+      });
+      //TODO:apply selected product
+      $http({
+        method: "POST",
+        url: "/proxy/node_server/svr/request",
+        headers: {
+          'Authorization': "Bearer " + $rootScope.access_token
+        },
+        data:
+        {
+          request:'generateCarInsuranceOrder',
+          info:
+          {
+            products:products,
+            companys:companys,
+            carId:1
+          }
+        }
+      }).then(function(res) {
+        $scope.closeCompanyModal();
+        var json=res.data;
+        var orderId=json.data;
+        if(orderId!==undefined&&orderId!==null)
+        {
+          //$rootScope.carInsurance.timer=$interval(
+          //  function(){
+          //    $http({
+          //      method: "POST",
+          //      url: "/proxy/node_server/svr/request",
+          //      headers: {
+          //        'Authorization': "Bearer " + $rootScope.access_token
+          //      },
+          //      data:
+          //      {
+          //        request:'generateCarInsuranceOrder',
+          //        orderId:orderId
+          //      }
+          //    }).then(function(res) {
+          //      var json=res.data;
+          //      if(json.state==3)
+          //      {
+          //        $interval.cancle($rootScope.carInsurance.timer);
+          //      }
+          //    });
+          //  }
+          //  ,3000);
+          $state.go('car_orders');
+        }
+      }).catch(function(err) {
+        $scope.closeCompanyModal();
+        var str='';
+        for(var feild in err)
+        str+=err[field];
+        console.error('error=\r\n' + str);
+      });
     }
 
 
