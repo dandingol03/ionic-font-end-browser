@@ -4,6 +4,7 @@ log4js.configure(logConf);
 var logger = log4js.getLogger('svrProc');
 var dblogger = log4js.getLogger('dbOperator');
 var dbConf = require('../config.js').dbConf;
+var ftpRoot=require('../config.js').ftpRoot;
 var dbOperator = require('../js/dbOperator.js');
 var fs = require('fs');
 var Promise = require('bluebird');
@@ -17,7 +18,7 @@ function uploadCarAndOwnerInfo(personId, carInfo, httpResponse) {
     var carPhotoFilename = "data/carPhoto_" + personId;
     var ownerIdFilename = "data/ownerIdPhoto_" + personId;
     return fs.writeFileAsync(carPhotoFilename, carInfo.carPhoto, "binary").then(function(res){
-      return fs.writeFileAsync(carPhotoFilename, carInfo.carPhoto, "binary");
+      return fs.writeFileAsync(ownerIdFilename, carInfo.ownerIdPhoto, "binary");
     }).then(function (res) {
       return dbOperator.addCarInfo(personId, carInfo);
     }).then(function (res) {
@@ -31,36 +32,20 @@ function uploadCarAndOwnerInfo(personId, carInfo, httpResponse) {
   }
 }
 
-
-//上传照片
-function uploadPhoto(personId,imageType,imageName,req,httpResponse)
+function uploadPhoto(personId,imageType,suffix,req,httpResponse)
 {
-
   var form = new formidable.IncomingForm();
   form.uploadDir =__dirname+'/../data/';
   var dir=__dirname+'/../data/';
-  switch(imageType)
-  {
-    case 'perIdCard':
-      dir=__dirname+"/../data/perIdCardPhoto_" + personId;
-          break;
-    case 'driverCard':
-      dir=__dirname+"/../data/driverCardPhoto_" + personId;
-      break;
-    case 'drivingLicense':
-      dir=__dirname+"/../data/drivingLicensePhoto_" + personId;
-      break;
+  dir=ftpRoot.base+ftpRoot.branches[imageType]+'/'+personId;
 
-  }
   form.parse(req, function(error, fields, files) {
-    fs.renameSync(files.file.path, dir+'/'+imageName);
+    fs.renameSync(files.file.path, dir+'/'+imageType+'.'+suffix);
     httpResponse.json({re: 1});
   });
 
   httpResponse.json({result: "ok"});
 }
-
-
 
 module.exports = function(req, res) {
   var personId = req.user.id;
@@ -73,11 +58,29 @@ module.exports = function(req, res) {
     cmd = req.query.request;
   }
   switch (cmd) {
+    case 'getInsuranceCompany':
+      dbOperator.getInsuranceCompany().then(function (re) {
+        res.json(re);
+      })
+      break;
     case "uploadCarAndOwnerInfo":
       uploadCarAndOwnerInfo(personId, req.body.info, res);
       break;
+
+    case "getOrderState":
+      dbOperator.getOrderState(req.body.orderId).then(function (result) {
+        res.json({result: "ok", carInfo: result});
+      })
+      break;
+
+    case "getOrderPlan":
+      dbOperator.getOrderPlan(req.body.orderId).then(function (result) {
+        res.json(result);
+      })
+      break;
+
     case "getCarAndOwnerInfo":
-      dbOperator.getCarInfo(personId).then(function (result) {
+      dbOperator.getCarAndOwnerInfo(personId).then(function (result) {
         res.json({result: "ok", carInfo: result});
       })
       break;
@@ -130,6 +133,46 @@ module.exports = function(req, res) {
       break;
     case 'createRelativePerson':
       dbOperator.createRelativePerson(personId,req.body.info).then(function (re) {
+        res.json(re);
+      });
+      break;
+    case 'rollbackTest':
+      dbOperator.rollbackTest(personId,req.body.info).then(function (re) {
+        res.json(re);
+      });
+      break;
+    case 'getCurDayOrderNumTest':
+      dbOperator.getCurDayOrderNumTest(personId,req.body.info).then(function (re) {
+        res.json(re);
+      });
+      break;
+    case 'getCarInsuranceMeals':
+      dbOperator.getCarInsuranceMeals(personId).then(function (re) {
+        res.json(re);
+      });
+      break;
+    case 'generateCarInsuranceOrder':
+        dbOperator.generateCarInsuranceOrder(personId,req.body.info).then(function(re) {
+          res.json(re);
+        });
+      break;
+    case 'checkCarOrderState':
+      dbOperator.checkCarOrderState(req.body.orderId).then(function(re) {
+        res.json(re);
+      });
+      break;
+    case 'getCarOrderPriceItems':
+      dbOperator.getCarOrderPriceItems(req.body.orderId).then(function(re) {
+        res.json(re);
+      });
+      break;
+    case 'userApplyUnchangedLifeOrder':
+      dbOperator.userApplyUnchangedLifeOrder(personId,req.body.info).then(function(re) {
+        res.json(re);
+      });
+      break;
+    case 'userUpdateLifeOrder':
+      dbOperator.userUpdateLifeOrder(req.body.info).then(function(re) {
         res.json(re);
       });
       break;

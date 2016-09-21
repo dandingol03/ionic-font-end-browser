@@ -6,6 +6,7 @@ var app = require('express')();
 var server=require('http').createServer();
 var WebSocketServer=require('ws').Server;
 var wss = new WebSocketServer({server: server});
+var svrProc = require('./js/svrProc');
 
 var static = require("express-static");
 var bodyParser=require('body-parser');
@@ -37,6 +38,12 @@ app.get('/',function(req,res) {
     res.sendFile(__dirname+'/www/index.html');
 });
 
+app.post('*',function(req,res,next) {
+   req.user={
+       id:2
+   }
+    next();
+});
 
 app.post('/login', function (req, res) {
 
@@ -47,6 +54,9 @@ app.post('/proxy/node_server/login',function(req,res) {
     var info=req.body;
     res.send({re: 1});
 });
+
+
+app.post('/**/svr/request', svrProc);
 
 
 wss.on('connection',function connection(ws) {
